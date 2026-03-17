@@ -65,11 +65,11 @@ function ProjectCard({
 }) {
   const glowStyles: Record<string, string> = {
     violet: "shadow-[0_0_30px_rgba(139,92,246,0.08)] border-violet-500/20",
-    blue:   "shadow-[0_0_30px_rgba(59,130,246,0.08)] border-blue-500/20",
-    emerald:"shadow-[0_0_30px_rgba(52,211,153,0.08)] border-emerald-500/20",
-    amber:  "shadow-[0_0_30px_rgba(251,191,36,0.08)] border-amber-500/20",
-    rose:   "shadow-[0_0_30px_rgba(244,63,94,0.08)] border-rose-500/20",
-    cyan:   "shadow-[0_0_30px_rgba(34,211,238,0.08)] border-cyan-500/20",
+    blue: "shadow-[0_0_30px_rgba(59,130,246,0.08)] border-blue-500/20",
+    emerald: "shadow-[0_0_30px_rgba(52,211,153,0.08)] border-emerald-500/20",
+    amber: "shadow-[0_0_30px_rgba(251,191,36,0.08)] border-amber-500/20",
+    rose: "shadow-[0_0_30px_rgba(244,63,94,0.08)] border-rose-500/20",
+    cyan: "shadow-[0_0_30px_rgba(34,211,238,0.08)] border-cyan-500/20",
   }
   const iconColor: Record<string, string> = {
     violet: "text-violet-400",
@@ -561,7 +561,7 @@ function SkillsBento() {
               {computerVisionList.map((t) => <AIBadge key={t.label} label={t.label} variant={t.variant} />)}
             </div>
           </BentoCard>
-          
+
           <BentoCard glowColor="rgba(59,130,246,0.08)">
             <p className="text-zinc-500 text-xs mb-4 uppercase tracking-widest font-semibold">NLP</p>
             <div className="flex flex-wrap gap-2">
@@ -589,7 +589,7 @@ function SkillsBento() {
               {dataScienceList.map((t) => <AIBadge key={t.label} label={t.label} variant={t.variant} />)}
             </div>
           </BentoCard>
-          
+
           <BentoCard glowColor="rgba(251,191,36,0.08)">
             <p className="text-zinc-500 text-xs mb-4 uppercase tracking-widest font-semibold">Cloud</p>
             <div className="flex flex-wrap gap-2">
@@ -636,10 +636,10 @@ function ProjectsTimeline({ sectionRef }: { sectionRef: React.RefObject<HTMLElem
 
       {/* GitHub Call to Action */}
       <div className="flex justify-center pb-24 mt-4 relative z-10 w-full">
-        <a 
-          href="https://github.com/AliMostafaRadwan" 
-          target="_blank" 
-          rel="noopener noreferrer" 
+        <a
+          href="https://github.com/AliMostafaRadwan"
+          target="_blank"
+          rel="noopener noreferrer"
           className="group inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 hover:border-violet-500/30 transition-all duration-300 backdrop-blur-sm"
         >
           <Github className="w-5 h-5 text-zinc-400 group-hover:text-white transition-colors" />
@@ -657,10 +657,10 @@ function About() {
   return (
     <section id="about" className="relative z-10 py-28 px-6">
       <div className="max-w-5xl mx-auto">
-        
+
         {/* Top Header & Profile */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 mb-20 max-w-4xl mx-auto">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -683,9 +683,9 @@ function About() {
               About
             </div>
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6 flex items-center justify-center md:justify-start gap-2 md:gap-3">
-              <span className="text-zinc-400">About</span> 
-              <span className="text-zinc-600 font-light text-2xl md:text-4xl">&gt;</span> 
-              <span className="text-white">Who I Am</span>
+              <span className="text-zinc-400">About</span>
+              <span className="text-zinc-600 font-light text-2xl md:text-4xl">&gt;</span>
+              <span className="text-white">Who am I?</span>
             </h2>
             <p className="text-zinc-400 text-sm md:text-lg leading-relaxed max-w-2xl">
               I engineer AI systems that work in the real world. My background spans autonomous agents, voice pipelines,
@@ -793,7 +793,7 @@ export default function HomePage() {
   return (
     <>
       <Nav />
-      
+
       {/* GLOBAL DITHERING THEME BACKGROUND */}
       <div className="fixed inset-0 z-0 pointer-events-none bg-zinc-950 flex flex-col items-center justify-center overflow-hidden">
         <Suspense fallback={<div className="absolute inset-0 bg-violet-950/20" />}>
