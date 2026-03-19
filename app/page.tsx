@@ -175,6 +175,7 @@ const timelineData = [
             description="Sequential 4-phase autonomous agent: macroeconomic context → fundamental screening → technical triggers → catalyst validation. Delivers ranked shortlist with rationale."
             tags={["LangGraph", "Kimi K2", "Python", "OpenClaw", "WhatsApp"]}
             glow="violet"
+            videoSrc="/ai-stock-screener.mp4"
           />
           <ProjectCard
             icon={Mic}
